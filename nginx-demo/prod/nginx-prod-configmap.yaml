@@ -5,9 +5,48 @@ metadata:
   namespace: prod
 data:
   index.html: |
-    <html>
-    <head><title>Prod Environment</title></head>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prod Environment</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0;
+                color: #333;
+                text-align: center;
+                padding: 50px;
+            }
+            h1 {
+                color: #28a745;
+            }
+            .container {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                display: inline-block;
+            }
+            .info {
+                margin-top: 20px;
+                text-align: left;
+            }
+        </style>
+    </head>
     <body>
-    <h1>Welcome to the Prod Environment</h1>
+        <div class="container">
+            <h1>Welcome to the Prod Environment</h1>
+            <p>Argo CD Show n Tell</p>
+            <div class="info">
+                <p><strong>Namespace:</strong> prod</p>
+                <p><strong>Replicas:</strong> 3</p>
+                <p><strong>Date and Time:</strong> <span id="datetime"></span></p>
+            </div>
+        </div>
+        <script>
+            document.getElementById('datetime').textContent = new Date().toLocaleString();
+        </script>
     </body>
     </html>
