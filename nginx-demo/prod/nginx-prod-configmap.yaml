@@ -37,7 +37,7 @@ data:
     </head>
     <body>
         <div class="container">
-            <h1>Welcome to the Prod Environment</h1>
+            <h1>Prod App Example</h1>
             <p>Argo CD Show n Tell</p>
             <div class="info">
                 <p><strong>Namespace:</strong> prod</p>
