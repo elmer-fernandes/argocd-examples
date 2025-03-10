@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-config
+  namespace: prod
+data:
+  index.html: |
+    <html>
+    <head><title>Prod Environment</title></head>
+    <body>
+    <h1>Welcome to the Prod Environment</h1>
+    </body>
+    </html>
