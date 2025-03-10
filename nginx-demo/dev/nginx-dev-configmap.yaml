@@ -37,7 +37,7 @@ data:
     </head>
     <body>
         <div class="container">
-            <h1>Welcome to the Dev Environment 2</h1>
+            <h1>Welcome to the Dev Environment</h1>
             <p>Argo CD Show n Tell</p>
             <div class="info">
                 <p><strong>Namespace:</strong> dev</p>
